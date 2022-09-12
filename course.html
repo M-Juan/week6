@@ -1,10 +1,83 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: course
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- 最下面的swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-bg1 ">
+      <div class="container justify-content-between d-flex align-items-center">
+        <h1>
+          <a href="./index.html">logo</a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active d-md-block text-decoration-none px-md-7 d-none text-white" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-md-block text-decoration-none px-md-7 d-none text-white" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item d-md-flex align-items-md-center justify-content-md-between px-md-7">
+              <span class="material-icons text-white d-md-none d-block ">
+                drag_handle
+              </span>
+              <span class="material-icons text-white d-md-block me-md-1 d-none">
+                account_circle
+              </span>
+              <a href="#" class="d-md-block text-decoration-none d-none ">登入</a>  
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav> -->
+    <nav class="bg-bg1" >
+      <div class="d-flex align-items-center container justify-content-between py-7 ">
+        <h1>
+          <a href="./index.html">logo</a>
+        </h1>
+        <ul class="list-unstyled d-flex fs-9 align-items-center  mx-md-n7 ">
+          <li><a href="#" class="d-md-block text-decoration-none px-md-7 d-none ">首頁</a></li>
+          <li><a href="#" class="d-md-block text-decoration-none  px-md-7 d-none ">課程介紹</a></li>
+          <li class=" d-md-flex align-items-md-center justify-content-md-between px-md-7 ">
+            <span class="material-icons text-white d-md-none d-block ">
+              drag_handle
+            </span>
+            <span class="material-icons text-white d-md-block me-md-1 d-none">
+              account_circle
+            </span>
+            <a href="#" class="d-md-block text-decoration-none d-none ">登入</a>  
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+
+    
 <section class=" bg-bg2  py-10">
     <div class="container ">
         <div class="row ">
@@ -124,3 +197,35 @@ current: course
         </div>
     </div>
 </section>
+
+    <footer class="footer bg-bg3 ">
+      <p class="container text-bg4 text-center py-md-7 py-5 mono">Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+    <!-- swiper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
