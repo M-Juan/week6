@@ -1,0 +1,42 @@
+nav{
+    height: 90px;
+    @include sm(){
+        height: 72px;
+    }
+    position: relative;
+    ::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 90px;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(90deg, #09ACF5 50%, #62DB54 50%);
+        @include sm(){
+            top: 72px;
+        }
+    }
+    h1{
+        float: left;
+        a{
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/logo.svg);
+            display: block;
+            width: 174.42px;
+            height: 42px;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            @include sm(){
+                background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/logo2.svg);
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+  

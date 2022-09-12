@@ -1,0 +1,20 @@
+
+// .btn-link{
+//     &:hover{
+//         color: $primary;
+//         border: $primary;
+//     }
+// }
+
+.course{
+    img{
+        width: 100px;
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        @include sm(){
+            font-size: 20px;
+        }
+    }
+}

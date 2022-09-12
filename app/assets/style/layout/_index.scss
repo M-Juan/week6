@@ -1,0 +1,387 @@
+
+// banner
+.banner{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 534.66px;
+  @include sm() {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_home_mobile.jpg);
+    background-size: contain;
+    height: 336px;
+  }
+  
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+
+// 手把手帶你，親自教到會
+.bd-b {
+  position: relative;
+  ::before{
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: -8px;
+    width: 50px;
+    height: 3px;
+    background-color:$primary;
+    @include sm(){
+      left: 43%;
+    }
+  }
+    
+}
+
+.card1{
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  &:hover{
+      background-color: #202020;
+      border: 1px solid #62DB54;
+      border-radius: 12px;
+  }
+  @include sm(){
+      padding-top: 40px;
+      padding-bottom: 40px;
+  } 
+}
+
+
+// 預期上課
+.card2{
+  background-color: #1C1C1C;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  position: relative;
+  margin-top: 42px;
+}
+
+.num{
+  position: absolute;
+  top: -36px;
+  left: 40px;
+  @include pad(){
+    top: -29.19px;
+  }
+  @include sm(){
+    top: -23px;
+  }
+}
+
+
+// 熱門課程推薦 
+.card3{
+  border-radius: 24px;
+  border: 1px solid $bg1;
+  &:hover{
+    border: 1px solid $primary;
+  }
+}
+
+
+.info-hover{
+  &:hover{
+    background-color: #FFFFFF;
+    span{
+      color: $primary;
+      opacity: 100%;
+    }
+    
+    p{
+      color: #FFFFFF;
+      opacity: 100%;
+    }
+  }
+}
+
+.info{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  height: 615px;
+  background-color: rgba($color: #1c1c1c, $alpha: 0.9);
+  background-blend-mode: multiply;
+  @include pad(){
+    width: 50%;
+    height: auto;
+  }
+  @include sm(){
+    width: 100%;
+    height: 263px;
+  }
+  .material-icons{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+  p{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+}
+
+.info2{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  height: 615px;
+  background-color: rgba($color: #1c1c1c, $alpha: 0.9);
+  background-blend-mode: multiply;
+  @include pad(){
+    width: 50%;
+  }
+  @include sm(){
+    width: 100%;
+    height: 263px;
+  }
+  .material-icons{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+  p{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+}
+.info3{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  height: 615px;
+  background-color: rgba($color: #1c1c1c, $alpha: 0.9);
+  background-blend-mode: multiply;
+  @include pad(){
+    width: 50%;
+  }
+  @include sm(){
+    width: 100%;
+    height: 263px;
+  }
+  .material-icons{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+  p{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+}
+.info4{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  height: 615px;
+  background-color: rgba($color: #1c1c1c, $alpha: 0.9);
+  background-blend-mode: multiply;
+  @include pad(){
+    width: 50%;
+  }
+  @include sm(){
+    width: 100%;
+    height: 263px;
+  }
+  .material-icons{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+  p{
+    color: #FFFFFF;
+    opacity: 50%;
+  }
+}
+
+// 文章分享
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-top-left-radius: 10px;
+  }
+  &-topRight {
+    border-top: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-top-right-radius: 10px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-bottom-left-radius: 10px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-bottom-right-radius: 10px;
+  }
+}
+.card4:hover {
+  .squareRounded {
+    display: block;
+  }
+}
+
+
+
+.feedback{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_share.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 733px;
+}
+
+.swiper {
+  width: 100%;
+  height: 429px;
+  // border: 1px solid red;
+  @include pad(){
+    height: auto;
+  }
+  &-img {
+    top: 0;
+    left: 10px;
+    width: 60%;
+    height: 90%;
+    border-radius: 24px;
+    position: absolute;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #7C7E77;
+      border-radius: 24px;
+      left: -10px;
+      top: 10px;
+      z-index: -1;
+      @include pad() {
+        left: -5px;
+        top: 5px;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+    @include pad() {
+      position: relative;
+      width: calc(100% - 5px);
+      height: 213px;
+      left: 5px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .card {
+    width: 40%;
+    padding: 32px;
+    border-radius: 24px 24px 24px 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: black;
+  
+    &-img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      
+      right: 32px;
+      bottom: 100%;
+      transform: translateY(50%);
+      @include pad() {
+        width: 80px;
+        height: 80px;
+        right: 24px;
+        top: -30px;
+        bottom: auto;
+        transform: none;
+      }
+    }
+    @include pad() {
+      position: relative;
+      width: 100%;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+  }
+  
+  
+  .swiper-button-next:after, .swiper-button-prev:after {
+    content: '';
+  }
+  
+  &-button-next, &-button-prev {
+    position: unset;
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    color: #62DB54;
+  }
+  
+  .swiper-pagination {
+    position: unset;
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: #62DB54;
+      opacity: initial;
+      &-active {
+        width: 16px;
+        border-radius: 100px;
+      }
+    }
+  }
+  
+  &-buttons {
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 10;
+    position: absolute;
+    @media (max-width: 991px) {
+      position: initial;
+      transform: none;
+    }
+  }
+}
+
+
+.joint{
+  margin: 0 auto;
+  background-color:#202020 ;
+  width: 966px;
+  border-radius: 24px;
+  a{
+    border: 1px solid white;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    width: 138px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  @include pad(){
+    width: auto;
+  }
+  
+}
+
+
+      
+
+      
